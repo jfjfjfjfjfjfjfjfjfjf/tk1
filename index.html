@@ -29,78 +29,78 @@
 
     <!-- Главная страница -->
     <div id="home" class="page active">
-       <section class="hero" style="background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(139, 0, 0, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"400\" viewBox=\"0 0 1200 400\"><rect width=\"1200\" height=\"400\" fill=\"%23ffffff\"/></svg>');">
+       <section class="hero" style="background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(139, 0, 0, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"400\" viewBox=\"0 0 1200 400\"><rect width=\"1200\" height=\"400\" fill=\"%23ffffff\"/><circle cx=\"200\" cy=\"200\" r=\"80\" fill=\"%23f0f0f0\"/><circle cx=\"600\" cy=\"200\" r=\"80\" fill=\"%23f0f0f0\"/><circle cx=\"1000\" cy=\"200\" r=\"80\" fill=\"%23f0f0f0\"/></svg>');">
             <div class="container">
-                <h2>Наша продукция</h2>
-                <p>Широкий ассортимент стрелкового оружия для различных целей и задач</p>
+                <h2>Контакты</h2>
+                <p>Свяжитесь с нами для получения дополнительной информации о нашей продукции</p>
             </div>
         </section>
 
         <section>
             <div class="container">
-                <div class="section-title">
-                    <h2>Основные категории</h2>
-                </div>
-                <div class="products-grid">
-                    <div class="product-card">
-                        <div class="product-image">
-                            [Изображение пистолета]
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Контактная информация</h2>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h3>Адрес</h3>
+                                <p> 427000, Республика Удмуртия, с. Завьялово, ул. Прудовая, 39</p>
+                            </div>
                         </div>
-                        <div class="product-info">
-                            <h3>Пистолеты</h3>
-                            <p>Компактное и надежное оружие для самообороны и служебного применения.</p>
-                            <a href="#" class="btn" style="margin-top: 10px; display: inline-block;">Подробнее</a>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h3>Телефон</h3>
+                                <p>+7 (495) 123-45-67</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@techcrim.ru</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div>
+                                <h3>Режим работы</h3>
+                                <p>Пн-Пт: 9:00 - 18:00</p>
+                                <p>Сб-Вс: выходные</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            [Изображение автомата]
-                        </div>
-                        <div class="product-info">
-                            <h3>Автоматы</h3>
-                            <p>Автоматическое оружие для вооруженных сил и специальных подразделений.</p>
-                            <a href="#" class="btn" style="margin-top: 10px; display: inline-block;">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            [Изображение винтовки]
-                        </div>
-                        <div class="product-info">
-                            <h3>Винтовки</h3>
-                            <p>Снайперские и охотничьи винтовки с высокой точностью стрельбы.</p>
-                            <a href="#" class="btn" style="margin-top: 10px; display: inline-block;">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            [Изображение дробовика]
-                        </div>
-                        <div class="product-info">
-                            <h3>Дробовики</h3>
-                            <p>Гладкоствольное оружие для охоты, спорта и специального применения.</p>
-                            <a href="#" class="btn" style="margin-top: 10px; display: inline-block;">Подробнее</a>
-                        </div>
+                    <div class="contact-form">
+                        <h2>Обратная связь</h2>
+                        <form id="feedback-form">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Сообщение</label>
+                                <textarea id="message" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Отправить</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section style="background-color: #f8f8f8;">
+        <section style="padding-top: 0;">
             <div class="container">
-                <div class="section-title">
-                    <h2>Специальные предложения</h2>
-                </div>
-                <div class="about-content">
-                    <div class="about-text">
-                        <h3>Индивидуальные решения</h3>
-                        <p>Мы готовы разработать оружие по индивидуальным требованиям заказчика с учетом специфики применения.</p>
-                        <p>Наши инженеры проведут консультацию и предложат оптимальные технические решения.</p>
-                        <a href="#" class="btn nav-link" data-page="contacts">Связаться с нами</a>
-                    </div>
-                    <div class="about-image">
-                        [Изображение кастомизации]
-                    </div>
+                <div class="about-image" style="height: 400px;">
+                    [Карта проезда]
                 </div>
             </div>
         </section>
@@ -308,5 +308,6 @@
     <script src="./script/script.js"></script>
 </body>
 </html>
+
 
 
