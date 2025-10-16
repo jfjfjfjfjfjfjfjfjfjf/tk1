@@ -29,78 +29,69 @@
 
     <!-- Главная страница -->
     <div id="home" class="page active">
-       <section class="hero" style="background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(139, 0, 0, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"400\" viewBox=\"0 0 1200 400\"><rect width=\"1200\" height=\"400\" fill=\"%23ffffff\"/><circle cx=\"200\" cy=\"200\" r=\"80\" fill=\"%23f0f0f0\"/><circle cx=\"600\" cy=\"200\" r=\"80\" fill=\"%23f0f0f0\"/><circle cx=\"1000\" cy=\"200\" r=\"80\" fill=\"%23f0f0f0\"/></svg>');">
+       <!-- Баннер -->
+        <section class="hero">
             <div class="container">
-                <h2>Контакты</h2>
-                <p>Свяжитесь с нами для получения дополнительной информации о нашей продукции</p>
+                <h2>Техкрим - лидер в производстве оружия</h2>
+                <p>Современные технологии, проверенные решения и надежность в каждой детали. Более 30 лет на рынке оборонной промышленности.</p>
+                <a href="#" class="btn nav-link" data-page="products">Наша продукция</a>
             </div>
         </section>
 
-        <section>
+        <!-- О компании -->
+        <section id="about">
             <div class="container">
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h2>Контактная информация</h2>
-                        <div class="contact-item">
-                            <div class="contact-icon">📍</div>
-                            <div>
-                                <h3>Адрес</h3>
-                                <p> 427000, Республика Удмуртия, с. Завьялово, ул. Прудовая, 39</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">📞</div>
-                            <div>
-                                <h3>Телефон</h3>
-                                <p>+7 (495) 123-45-67</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">✉️</div>
-                            <div>
-                                <h3>Email</h3>
-                                <p>info@techcrim.ru</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">🕒</div>
-                            <div>
-                                <h3>Режим работы</h3>
-                                <p>Пн-Пт: 9:00 - 18:00</p>
-                                <p>Сб-Вс: выходные</p>
-                            </div>
-                        </div>
+                <div class="section-title">
+                    <h2>О компании</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p><strong>Закрытое акционерное общество «Техкрим»</strong> организовано в декабре 1991 года в городе Ижевске и в настоящее время представляет собой многопрофильное предприятие.</p>
+                        <p>Мы специализируемся на разработке и производстве высокоточного огнестрельного оружия для силовых структур, охранных предприятий и спортивных организаций.</p>
+                        <p>Наш завод оснащен современным оборудованием, а все производственные процессы соответствуют международным стандартам качества.</p>
+                        <p>Мы гордимся тем, что наша продукция используется в более чем 20 странах мира и заслужила доверие профессионалов.</p>
                     </div>
-                    <div class="contact-form">
-                        <h2>Обратная связь</h2>
-                        <form id="feedback-form">
-                            <div class="form-group">
-                                <label for="name">Ваше имя</label>
-                                <input type="text" id="name" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Телефон</label>
-                                <input type="tel" id="phone" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Сообщение</label>
-                                <textarea id="message" class="form-control" required></textarea>
-                            </div>
-                            <button type="submit" class="btn">Отправить</button>
-                        </form>
+                    <div class="about-image">
+                        [Изображение завода]
                     </div>
                 </div>
             </div>
         </section>
 
-        <section style="padding-top: 0;">
+        <!-- Преимущества -->
+        <section id="advantages" style="background-color: #f8f8f8;">
             <div class="container">
-                <div class="about-image" style="height: 400px;">
-                    [Карта проезда]
+                <div class="section-title">
+                    <h2>Наши преимущества</h2>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            [Иконка качества]
+                        </div>
+                        <div class="product-info">
+                            <h3>Высокое качество</h3>
+                            <p>Все изделия проходят многоуровневый контроль качества на каждом этапе производства.</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            [Иконка инноваций]
+                        </div>
+                        <div class="product-info">
+                            <h3>Инновации</h3>
+                            <p>Постоянное внедрение новых технологий и материалов для улучшения характеристик оружия.</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            [Иконка надежности]
+                        </div>
+                        <div class="product-info">
+                            <h3>Надежность</h3>
+                            <p>Наша продукция рассчитана на эксплуатацию в самых сложных условиях.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -308,6 +299,7 @@
     <script src="./script/script.js"></script>
 </body>
 </html>
+
 
 
 
