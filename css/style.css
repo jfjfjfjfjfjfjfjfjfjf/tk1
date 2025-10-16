@@ -1,0 +1,602 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Шапка */
+header {
+    background-color: #8B0000; /* Темно-бордовый */
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(139, 0, 0, 0.3);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.logo-icon {
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f8f8f8;
+    text-decoration: underline;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Главный баннер */
+.hero {
+    background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(139, 0, 0, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600"><rect width="1200" height="600" fill="%23ffffff"/><path d="M0,300 Q300,150 600,300 T1200,300" stroke="%23f0f0f0" stroke-width="2" fill="none"/></svg>');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #8B0000;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s;
+    border: 2px solid #ffffff;
+}
+
+.btn:hover {
+    background-color: #8B0000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* Секции */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    color: #8B0000;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title h2:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #8B0000;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* О компании */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+    background: linear-gradient(135deg, #8B0000, #A52A2A);
+    height: 300px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-style: italic;
+}
+
+/* Продукция */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.1);
+    transition: all 0.3s;
+    border: 1px solid #f0f0f0;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(139, 0, 0, 0.2);
+    border-color: #8B0000;
+}
+
+.product-image {
+    height: 200px;
+    background: linear-gradient(135deg, #8B0000, #A52A2A);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    margin-bottom: 10px;
+    color: #8B0000;
+}
+
+/* Контакты */
+.contact-content {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    margin-right: 15px;
+    color: #8B0000;
+    font-size: 1.2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #8B0000;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #8B0000;
+    box-shadow: 0 0 0 2px rgba(139, 0, 0, 0.1);
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Подвал */
+footer {
+    background-color: #8B0000;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.footer-column h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    color: #f0f0f0;
+    font-size: 0.9rem;
+}
+
+/* Страницы */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Секции с фоном */
+section[style*="background-color"] {
+    background-color: #f8f8f8 !important;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .about-content, .contact-content {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        flex-wrap: wrap;
+    }
+    
+    .footer-column {
+        flex: 1 0 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-column {
+        flex: 1 0 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+    
+    section {
+        padding: 50px 0;
+    }
+    
+    .hero {
+        padding: 70px 0;
+    }
+}
+
+/* Анимации */
+.product-card, .about-content, .contact-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Добавляем в конец файла стили для новой страницы */
+
+/* Стили для страницы "О предприятии" */
+
+/* Таймлайн */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #8B0000;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-year {
+    background-color: #8B0000;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    min-width: 80px;
+    text-align: center;
+    margin-right: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-content {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(139, 0, 0, 0.1);
+    border-left: 3px solid #8B0000;
+}
+
+.timeline-content h3 {
+    color: #8B0000;
+    margin-bottom: 10px;
+}
+
+/* Сетка ценностей */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.value-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    color: #8B0000;
+    margin-bottom: 15px;
+}
+
+.value-card ul {
+    list-style: none;
+    text-align: left;
+}
+
+.value-card ul li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.value-card ul li::before {
+    content: '•';
+    color: #8B0000;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Сетка сертификатов */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.certificate-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(139, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    border-color: #8B0000;
+}
+
+.certificate-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.certificate-card h3 {
+    color: #8B0000;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Адаптивность для новой страницы */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+    }
+    
+    .timeline-year {
+        margin-right: 0;
+        margin-bottom: 15px;
+        align-self: flex-start;
+    }
+    
+    .values-grid,
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .value-card,
+    .certificate-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .timeline-content {
+        padding: 15px;
+    }
+    
+    .value-icon {
+        font-size: 2.5rem;
+    }
+    
+    .certificate-icon {
+        font-size: 2rem;
+    }
+}
