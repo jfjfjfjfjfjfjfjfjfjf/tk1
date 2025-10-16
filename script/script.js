@@ -68,6 +68,14 @@ document.addEventListener('DOMContentLoaded', function() {
         // Показать целевую страницу
         document.getElementById(pageId).classList.add('active');
         
+        // Обновить активную ссылку в навигации
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('data-page') === pageId) {
+                link.classList.add('active');
+            }
+        });
+        
         // Прокрутка к верху страницы
         window.scrollTo(0, 0);
     }
@@ -78,20 +86,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Дополнительные функции для улучшения UX
 document.addEventListener('DOMContentLoaded', function() {
-    // Плавная прокрутка для якорей
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-    
     // Добавление класса для анимации при прокрутке
     const observerOptions = {
         threshold: 0.1,
@@ -111,19 +105,3 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 });
-
-// Добавляем стили для анимации
-const style = document.createElement('style');
-style.textContent = `
-    .product-card, .about-content, .contact-content {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    
-    .animate-in {
-        opacity: 1;
-        transform: translateY(0);
-    }
-`;
-document.head.appendChild(style);
